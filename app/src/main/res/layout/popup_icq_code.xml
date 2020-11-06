@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#D4E5F3">
+
+
+    <TextView
+        android:id="@+id/tvICQCodeTitlePopupTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Icq Title"
+        android:textSize="@dimen/text_size_standard"
+        app:layout_constraintEnd_toStartOf="@+id/ivICQCodeClosePopupImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvICQCodeLabelPopupTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_margin_standard"
+        android:layout_marginLeft="@dimen/text_margin_standard"
+        android:layout_marginTop="@dimen/text_margin_medium"
+        android:gravity="center"
+        android:text="Code"
+        android:textSize="@dimen/text_size_small"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvICQCodeTitlePopupTextView" />
+
+
+    <TextView
+        android:id="@+id/tvICQCodePopupTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_margin_medium"
+        android:layout_marginLeft="@dimen/text_margin_medium"
+        android:layout_marginTop="@dimen/text_margin_medium"
+        android:gravity="center"
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+        android:textIsSelectable="true"
+        android:contextClickable="true"
+        android:text="icq_code_to_be_copied"
+        android:textColor="#394EBF"
+        android:textColorHint="#3F51B5"
+        android:textSize="@dimen/text_size_standard"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tvICQCodeLabelPopupTextView"
+        app:layout_constraintTop_toBottomOf="@+id/tvICQCodeTitlePopupTextView" />
+
+    <ImageView
+        android:id="@+id/ivICQCodeCopyPopupImageView"
+        android:layout_width="19dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="@dimen/text_margin_standard"
+        android:layout_marginLeft="@dimen/text_margin_standard"
+        android:layout_marginTop="@dimen/text_margin_medium"
+        android:background="@drawable/circle"
+        app:layout_constraintStart_toEndOf="@+id/tvICQCodePopupTextView"
+        app:layout_constraintTop_toBottomOf="@+id/tvICQCodeTitlePopupTextView"
+        app:srcCompat="?attr/actionModeCopyDrawable" />
+
+    <ImageView
+        android:id="@+id/ivICQCodeClosePopupImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_dialog" />
+
+    <TextView
+        android:id="@+id/tvICQCodeInfoPopupTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_margin_standard"
+        android:layout_marginLeft="@dimen/text_margin_standard"
+        android:layout_marginTop="@dimen/text_margin_medium"
+        android:layout_marginEnd="@dimen/text_margin_standard"
+        android:layout_marginRight="@dimen/text_margin_standard"
+        android:gravity="center"
+        android:text="Please share this code with your students"
+        android:textSize="@dimen/text_size_small"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvICQCodePopupTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

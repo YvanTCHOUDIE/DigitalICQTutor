@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ICQQuestionListActivity">
+
+
+    <LinearLayout
+        android:id="@+id/lyICQQuestionContainerDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:gravity="left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/txtICQTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_margin_small"
+            android:layout_marginLeft="@dimen/text_margin_small"
+            android:layout_marginTop="@dimen/text_margin_very_small"
+            android:layout_marginEnd="@dimen/text_margin_small"
+            android:layout_marginRight="@dimen/text_margin_small"
+            android:hint="@string/icq_title_hint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <ImageView
+                    android:id="@+id/ivBackToICQListLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/text_margin_small"
+                    android:layout_marginLeft="@dimen/text_margin_small"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="?attr/actionModeCloseDrawable" />
+
+
+                <TextView
+                    android:id="@+id/tvBackToICQListLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="(Back to MCQ List)"
+                    android:textColor="#3182C3"
+                    android:textStyle="italic"
+                    app:layout_constraintStart_toEndOf="@+id/ivBackToICQListLabel"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+
+                <TextView
+                    android:id="@+id/tvSaveLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="(Save)"
+                    android:textColor="#3182C3"
+                    android:textStyle="italic"
+                    app:layout_constraintEnd_toStartOf="@+id/ivSaveLabel"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivSaveLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|end"
+                    android:layout_weight="1"
+                    android:paddingRight="@dimen/text_margin_small"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@android:drawable/ic_menu_save"
+                    tools:layout_editor_absoluteY="0dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvICQQuestionListLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/text_margin_small"
+            android:layout_marginLeft="@dimen/text_margin_small"
+            android:layout_marginTop="@dimen/text_margin_very_small"
+            android:layout_marginEnd="@dimen/text_margin_small"
+            android:layout_marginRight="@dimen/text_margin_small"
+            android:layout_weight="1"
+            android:text="List of MCQ questions you created in this MCQ"
+            android:textColor="#090909"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvICQQuestions"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="@dimen/text_margin_standard"
+        android:layout_marginRight="@dimen/text_margin_standard"
+        android:nestedScrollingEnabled="false"
+        android:paddingBottom="?attr/actionBarSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lyICQQuestionContainerDetails" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "83650341356",
+    "firebase_url": "https://digitalicqtutor.firebaseio.com",
+    "project_id": "digitalicqtutor",
+    "storage_bucket": "digitalicqtutor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83650341356:android:4681155d420f8afc2af8c9",
+        "android_client_info": {
+          "package_name": "com.yvantchoudie.digitalicqtutor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "83650341356-hvec10ahkt31p9a494kueulkqhnd3dhu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yvantchoudie.digitalicqtutor",
+            "certificate_hash": "fcae8cc17dec6a29b345cb29da378bbf31381a3e"
+          }
+        },
+        {
+          "client_id": "83650341356-bdol238ik67607kr9pgiabel1i751dlm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK3V_A_PjYysnVNiP3dAiEw_ND7AU3ltc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "83650341356-bdol238ik67607kr9pgiabel1i751dlm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

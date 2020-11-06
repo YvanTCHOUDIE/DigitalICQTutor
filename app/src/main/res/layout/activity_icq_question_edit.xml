@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ICQQuestionEditActivity">
+
+
+    <EditText
+        android:id="@+id/txtICQQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_margin_small"
+        android:layout_marginLeft="@dimen/text_margin_small"
+        android:layout_marginTop="@dimen/text_margin_very_small"
+        android:layout_marginEnd="@dimen/text_margin_small"
+        android:layout_marginRight="@dimen/text_margin_small"
+        android:hint="@string/icq_question_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtOptionA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_margin_small"
+        android:layout_marginLeft="@dimen/text_margin_small"
+        android:layout_marginTop="@dimen/text_margin_high"
+        android:layout_marginEnd="@dimen/text_margin_small"
+        android:layout_marginRight="@dimen/text_margin_small"
+        android:hint="@string/optionA_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtICQQuestion" />
+
+    <EditText
+        android:id="@+id/txtOptionB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_margin_small"
+        android:layout_marginLeft="@dimen/text_margin_small"
+        android:layout_marginTop="@dimen/text_margin_very_small"
+        android:layout_marginEnd="@dimen/text_margin_small"
+        android:layout_marginRight="@dimen/text_margin_small"
+        android:hint="@string/optionB_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOptionA" />
+    <EditText
+        android:id="@+id/txtOptionC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_margin_small"
+        android:layout_marginLeft="@dimen/text_margin_small"
+        android:layout_marginTop="@dimen/text_margin_very_small"
+        android:layout_marginEnd="@dimen/text_margin_small"
+        android:layout_marginRight="@dimen/text_margin_small"
+        android:hint="@string/optionC_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOptionB" />
+    <EditText
+        android:id="@+id/txtOptionD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_margin_small"
+        android:layout_marginLeft="@dimen/text_margin_small"
+        android:layout_marginTop="@dimen/text_margin_very_small"
+        android:layout_marginEnd="@dimen/text_margin_small"
+        android:layout_marginRight="@dimen/text_margin_small"
+        android:hint="@string/optionD_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOptionC" />
+
+    <TextView
+        android:id="@+id/txtLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_margin_small"
+        android:layout_marginLeft="@dimen/text_margin_small"
+        android:layout_marginTop="@dimen/text_margin_high"
+        android:layout_marginEnd="@dimen/text_margin_small"
+        android:layout_marginRight="@dimen/text_margin_small"
+        android:text="Please indicate which is the correct answer to this question"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOptionD" />
+
+    <Spinner
+        android:id="@+id/spRightAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_margin_small"
+        android:layout_marginLeft="@dimen/text_margin_small"
+        android:layout_marginTop="@dimen/text_margin_medium"
+        android:layout_marginEnd="@dimen/text_margin_small"
+        android:layout_marginRight="@dimen/text_margin_small"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLabel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

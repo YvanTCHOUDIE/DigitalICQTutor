@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#D4E5F3">
+
+
+    <TextView
+        android:id="@+id/tvICQScoreTitlePopupTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Icq Title"
+        android:textSize="@dimen/text_size_standard"
+        app:layout_constraintEnd_toStartOf="@+id/ivICQScoreClosePopupImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvICQScoreLabelPopupTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_margin_standard"
+        android:layout_marginLeft="@dimen/text_margin_standard"
+        android:layout_marginTop="@dimen/text_margin_medium"
+        android:gravity="center"
+        android:text="Score"
+        android:textSize="@dimen/text_size_small"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvICQScoreTitlePopupTextView" />
+
+
+    <TextView
+        android:id="@+id/tvICQScoreValuePopupTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_margin_medium"
+        android:layout_marginLeft="@dimen/text_margin_medium"
+        android:layout_marginTop="@dimen/text_margin_medium"
+        android:layout_marginEnd="@dimen/text_margin_medium"
+        android:layout_marginRight="@dimen/text_margin_medium"
+        android:contextClickable="true"
+        android:gravity="center"
+        android:text="ICQ Score"
+        android:textColor="#394EBF"
+        android:textColorHint="#3F51B5"
+        android:textIsSelectable="true"
+        android:textSize="@dimen/text_size_standard"
+        android:textStyle="bold"
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvICQScoreLabelPopupTextView"
+        app:layout_constraintTop_toBottomOf="@+id/tvICQScoreTitlePopupTextView" />
+
+    <ImageView
+        android:id="@+id/ivICQScoreClosePopupImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_dialog" />
+
+    <TextView
+        android:id="@+id/tvICQScoreInfoPopupTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_margin_standard"
+        android:layout_marginLeft="@dimen/text_margin_standard"
+        android:layout_marginTop="@dimen/text_margin_medium"
+        android:layout_marginEnd="@dimen/text_margin_standard"
+        android:layout_marginRight="@dimen/text_margin_standard"
+        android:gravity="center"
+        android:text="Score info"
+        android:textSize="@dimen/text_size_small"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvICQScoreLabelPopupTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

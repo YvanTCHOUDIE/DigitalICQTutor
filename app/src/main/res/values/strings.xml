@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Digital MCQ Tutor</string>
+    <string name="icq_question_hint">Question</string>
+    <string name="optionA_hint">Option A</string>
+    <string name="optionB_hint">Option B</string>
+    <string name="save_icq_question">Save the question</string>
+    <string name="delete_icq_question">Delete the question</string>
+    <string name="optionC_hint">Option C</string>
+    <string name="optionD_hint">Option D</string>
+    <string name="choosing_icq_code_hint">Enter the code of the MCQ</string>
+    <string name="new_icq_question">New MCQ Question</string>
+    <string name="log_out">Log out</string>
+    <string name="icq_title_hint">Title of the MCQ</string>
+    <string name="save_icq">Save the MCQ</string>
+    <string name="new_icq">New MCQ</string>
+    <string name="submit_icq_responses">Submit my answers</string>
+</resources>

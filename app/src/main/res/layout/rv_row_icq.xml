@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivICQImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_margin_small"
+        android:layout_marginLeft="@dimen/text_margin_small"
+        android:layout_marginTop="@dimen/text_margin_small"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tvICQTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_margin_small"
+        android:layout_marginLeft="@dimen/text_margin_small"
+        android:layout_marginTop="@dimen/text_margin_small"
+        android:text="TextView"
+        android:textSize="@dimen/text_size_large"
+        app:layout_constraintStart_toEndOf="@+id/ivICQImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvICQNbQuestions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_margin_small"
+        android:layout_marginLeft="@dimen/text_margin_small"
+        android:layout_marginTop="@dimen/text_margin_small"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/ivICQImage"
+        app:layout_constraintTop_toBottomOf="@+id/tvICQTitle" />
+
+    <TextView
+        android:id="@+id/tvICQAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text_margin_small"
+        android:layout_marginEnd="@dimen/text_margin_small"
+        android:layout_marginRight="@dimen/text_margin_small"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_size_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvICQNbQuestions" />
+</androidx.constraintlayout.widget.ConstraintLayout>
